@@ -21,7 +21,7 @@ CREATE TABLE Project (
 
 -- 2 insert into tables
 INSERT INTO Department VALUES
-(1, 'customer service'),
+(1, 'HR'),
 (2, 'IT'),
 (3, 'Sales'),
 (4, 'Finance');
@@ -33,7 +33,7 @@ INSERT INTO Employees VALUES
 (104, 'Swayam', 60000, 4);
 
 INSERT INTO Project VALUES
-(201, 'UI/UX', 2),
+(201, 'Payroll System', 2),
 (202, 'Web Application', 2);
 
 select * from Employees
