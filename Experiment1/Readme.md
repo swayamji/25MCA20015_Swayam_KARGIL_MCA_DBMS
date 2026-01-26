@@ -28,3 +28,17 @@ Member(emp) assigned to each project:
 
 <img width="534" height="232" alt="Screenshot_2026-01-26_14-34-18" src="https://github.com/user-attachments/assets/c431884e-87f9-4bcb-b161-6c890f381260" />
 
+
+Grant:
+
+
+<img width="547" height="208" alt="image" src="https://github.com/user-attachments/assets/9876b40b-dd10-4628-9d0b-f8f4ab25c6cd" />
+
+
+Revoke access:
+
+
+<img width="670" height="156" alt="image" src="https://github.com/user-attachments/assets/87de402c-e148-4c4f-b1b9-495525820bcd" />
+
+
+
