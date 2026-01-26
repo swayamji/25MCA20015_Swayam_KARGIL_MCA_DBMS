@@ -1,3 +1,11 @@
+Creating tables:-
+
+<img width="636" height="421" alt="Screenshot_2026-01-26_14-35-17" src="https://github.com/user-attachments/assets/e4f826db-7ba4-4205-bb13-3cb53297d600" />
+
+
+
+
+
 For Selecting Report staff from department:-
 
 
