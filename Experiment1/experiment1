@@ -47,20 +47,20 @@ WHERE project_id = 202;
 --3 create a user
 SELECT CURRENT_USER;
 
-CREATE ROLE reporting_staff
+CREATE ROLE report_staff
 WITH LOGIN PASSWORD 'staff1';
 
 SELECT CURRENT_USER;
 
-GRANT SELECT ON Department TO reporting_staff;
-GRANT SELECT ON Employees TO reporting_staff;
-GRANT SELECT ON Project TO reporting_staff;
+GRANT SELECT ON Department TO report_staff;
+GRANT SELECT ON Employees TO report_staff;
+GRANT SELECT ON Project TO report_staff;
 
 REVOKE CREATE ON SCHEMA public FROM reporting_staff;
 
-REVOKE INSERT, UPDATE, DELETE ON Department FROM reporting_staff;
-REVOKE INSERT, UPDATE, DELETE ON Employees FROM reporting_staff;
-REVOKE INSERT, UPDATE, DELETE ON Project FROM reporting_staff;
+REVOKE INSERT, UPDATE, DELETE ON Department FROM report_staff;
+REVOKE INSERT, UPDATE, DELETE ON Employees FROM report_staff;
+REVOKE INSERT, UPDATE, DELETE ON Project FROM report_staff;
 
 --4 alter table
 ALTER TABLE Employees
