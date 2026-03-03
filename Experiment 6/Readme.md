@@ -10,6 +10,7 @@ Step2: Creating a View for Joining Multiple Tables
 
 Step3: Advanced Summarization View
 
-![Uploading image.png…]()
+<img width="521" height="192" alt="image" src="https://github.com/user-attachments/assets/56f782f1-bb3b-489d-bb0f-c29e288f764f" />
+
 
 
