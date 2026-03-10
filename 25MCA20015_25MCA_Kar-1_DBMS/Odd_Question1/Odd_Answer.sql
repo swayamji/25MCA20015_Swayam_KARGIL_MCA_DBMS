@@ -1,3 +1,4 @@
+--25MCA20015
 CREATE TABLE Purchases (
     purchase_id SERIAL PRIMARY KEY,
     customer_id INT,
