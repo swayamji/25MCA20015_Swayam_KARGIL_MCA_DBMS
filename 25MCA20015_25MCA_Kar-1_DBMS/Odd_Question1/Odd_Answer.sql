@@ -1,25 +1,29 @@
 CREATE TABLE Purchases (
-    purchase_id INT PRIMARY KEY,
-    customer_name VARCHAR(50),
+    purchase_id SERIAL PRIMARY KEY,
+    customer_id INT,
     product_id INT,
     purchase_date DATE
 );
 
-INSERT INTO Purchases (purchase_id, customer_name, product_id, purchase_date) VALUES
-(1, 'Swayam', 101, '2026-03-01'),
-(2, 'Roshan', 101, '2026-03-01'),
-(3, 'Sanchit', 101, '2026-03-01'),
-(4, 'Swayam', 102, '2026-03-02'),
-(5, 'Sanchit', 102, '2026-03-02'),
-(6, 'Roshan', 103, '2026-03-03');
+INSERT INTO Purchases (customer_id, product_id, purchase_date) VALUES
+(101, 1, '2026-03-01'),
+(102, 1, '2026-03-01'),
+(103, 2, '2026-03-01'),
+(104, 1, '2026-03-01'),
+(105, 3, '2026-03-02'),
+(101, 2, '2026-03-02'),
+(102, 2, '2026-03-02'),
+(106, 1, '2026-03-01'),
+(107, 3, '2026-03-02'),
+(108, 1, '2026-03-03');
 
 SELECT 
-    p1.customer_name AS customer1,
-    p2.customer_name AS customer2,
+    p1.customer_id AS customer1,
+    p2.customer_id AS customer2,
     p1.product_id,
     p1.purchase_date
 FROM Purchases p1
 JOIN Purchases p2
 ON p1.product_id = p2.product_id
 AND p1.purchase_date = p2.purchase_date
-AND p1.customer_name < p2.customer_name;
+AND p1.customer_id < p2.customer_id;
